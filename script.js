@@ -16,7 +16,8 @@ async function loadData() {
       karnatakaResponse,
       andamanNicobarResponse,
       puducherryResponse,
-      andhraPradeshResponse
+      andhraPradeshResponse,
+      tamilNaduResponse
     ] = await Promise.all([
       fetch('./data/states.json'),
       fetch('./data/kerala.json'),
@@ -25,7 +26,8 @@ async function loadData() {
       fetch('./data/karnataka.json'),
       fetch('./data/andamanNicobar.json'),
       fetch('./data/puducherry.json'),
-      fetch('./data/andhraPradesh.json')
+      fetch('./data/andhraPradesh.json'),
+      fetch('./data/tamilNadu.json')
     ]);
 
     // Secure data loading with error handling
@@ -37,6 +39,7 @@ async function loadData() {
     const andamanNicobarMonuments = await andamanNicobarResponse.json();
     const puducherryMonuments = await puducherryResponse.json();
     const andhraPradeshMonuments = await andhraPradeshResponse.json();
+    const tamilNaduMonuments = await tamilNaduResponse.json();
 
     // Handle Kerala data structure securely
     let keralaMonuments = [];
@@ -87,6 +90,11 @@ async function loadData() {
       state: 'andhra-pradesh'
     }));
     
+    const processedTamilNaduMonuments = tamilNaduMonuments.map(monument => ({
+      ...monument,
+      state: 'tamil-nadu'
+    }));
+    
     // Securely store data in app state
     appState.statesData = statesData;
     appState.monumentsData = [
@@ -96,11 +104,13 @@ async function loadData() {
       ...processedKarnatakaMonuments,
       ...processedAndamanNicobarMonuments,
       ...processedPuducherryMonuments,
-      ...processedAndhraPradeshMonuments
+      ...processedAndhraPradeshMonuments,
+      ...processedTamilNaduMonuments
     ];
     appState.allMonuments = [...appState.monumentsData]; // Backup for global operations
 
     console.log('Total monuments loaded securely:', appState.monumentsData.length);
+    console.log('Tamil Nadu monuments loaded:', processedTamilNaduMonuments.length);
     renderStates();
   } catch (error) {
     console.error('Secure data loading failed:', error);

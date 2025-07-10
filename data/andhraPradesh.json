@@ -1,0 +1,133 @@
+[
+  {
+    "id": "tirupati-temple",
+    "name": "Sri Venkateswara Temple, Tirupati",
+    "type": "Temple",
+    "typeColor": "bg-orange-100 text-orange-800",
+    "state": "Andhra Pradesh",
+    "location": "Tirumala, Tirupati, Andhra Pradesh",
+    "description": "Sri Venkateswara Temple is one of the most visited and richest temples in the world, dedicated to Lord Venkateswara (Balaji). Located on the Tirumala Hills, this ancient temple attracts millions of devotees annually and is renowned for its spiritual significance and architectural beauty.",
+    "image": "https://imgs.search.brave.com/eDd-GIOrizn_ku1e9tHxP3NGHhJD-41SjZ4-JneKfh8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zMy5pbmRpYS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMTEv/RXhwbG9yZS1UaGUt/VW50b3VjaGVkLUJl/YXV0eS1PZi1BcmFr/dS1WYWxsZXktSW4t/QW5kaHJhLVByYWRl/c2guanBnP2ltcG9s/aWN5PU1lZGl1bV9X/aWR0aG9ubHkmdz04/MDAmaD01NDE",
+    "timings": "2:30 AM - 1:00 AM (Next day) with breaks",
+    "entryFee": "Free (Special darshan tickets available)",
+    "bestTime": "September to March",
+    "amenities": [
+      "Accommodation facilities",
+      "Prasad distribution",
+      "Medical facilities",
+      "Drinking water",
+      "Restrooms",
+      "Security services",
+      "Information centers",
+      "Transportation services"
+    ],
+    "festivals": [
+      "Brahmotsavam (September/October)",
+      "Vaikunta Ekadasi",
+      "Annual festivals",
+      "Special poojas",
+      "Kalyanam ceremonies",
+      "Religious celebrations"
+    ],
+    "contact": "+91 877 227 7777",
+    "website": "http://tirumala.org",
+    "nearestTransport": {
+      "railway": "Tirupati Railway Station (22 km)",
+      "airport": "Tirupati Airport (15 km)",
+      "bus": "Tirumala Bus Stand (2 km)"
+    },
+    "nearbyAttractions": [
+      "Kapila Theertham - 3 km",
+      "Akasa Ganga - 2 km",
+      "Papavinasam Theertham - 5 km",
+      "Sri Vari Museum - 1 km"
+    ],
+    "nearbyHotels": [
+      "TTD Guest Houses",
+      "Bhavani Lodge",
+      "Tirupati hotels",
+      "Pilgrim accommodations"
+    ],
+    "nearbyRestaurants": [
+      "Anna Prasadam (free meals)",
+      "TTD dining halls",
+      "Local vegetarian restaurants",
+      "Prasad centers"
+    ],
+    "specialFeatures": [
+      "Richest temple in the world",
+      "Lord Venkateswara deity",
+      "Tirumala Hills location",
+      "Ancient Dravidian architecture",
+      "Millions of annual visitors",
+      "Spiritual significance",
+      "Gold-plated dome",
+      "Religious pilgrimage center"
+    ]
+  },
+  {
+    "id": "amaravati-stupa",
+    "name": "Amaravati Stupa",
+    "type": "Buddhist Monument",
+    "typeColor": "bg-yellow-100 text-yellow-800",
+    "state": "Andhra Pradesh",
+    "location": "Amaravati, Andhra Pradesh",
+    "description": "Amaravati Stupa is an ancient Buddhist monument dating back to the 3rd century BCE. This magnificent stupa was one of the largest in India and showcases the rich Buddhist heritage of the region with its intricate sculptures and architectural grandeur.",
+    "image": "https://images.pexels.com/photos/4018863/pexels-photo-4018863.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "timings": "9:00 AM - 5:00 PM (Daily)",
+    "entryFee": "₹25 for Indians, ₹300 for Foreigners",
+    "bestTime": "October to March",
+    "amenities": [
+      "Archaeological museum",
+      "Guided tours",
+      "Photography allowed",
+      "Information boards",
+      "Drinking water",
+      "Restrooms",
+      "Security services",
+      "Research facilities"
+    ],
+    "festivals": [
+      "Buddha Purnima",
+      "Archaeological exhibitions",
+      "Cultural programs",
+      "Heritage festivals",
+      "Educational tours",
+      "Research conferences"
+    ],
+    "contact": "+91 863 227 6543",
+    "nearestTransport": {
+      "railway": "Guntur Railway Station (35 km)",
+      "airport": "Vijayawada Airport (60 km)",
+      "bus": "Amaravati Bus Stand (2 km)"
+    },
+    "nearbyAttractions": [
+      "Amaravati Museum - 500 meters",
+      "Dhyana Buddha Statue - 3 km",
+      "Krishna River - 2 km",
+      "Undavalli Caves - 8 km"
+    ],
+    "nearbyHotels": [
+      "Amaravati heritage hotels",
+      "Guntur city hotels",
+      "Government guest houses",
+      "Budget accommodations"
+    ],
+    "nearbyRestaurants": [
+      "Local Andhra cuisine",
+      "Traditional restaurants",
+      "Vegetarian eateries",
+      "Regional food centers"
+    ],
+    "specialFeatures": [
+      "Ancient Buddhist monument",
+      "3rd century BCE construction",
+      "Largest stupa in India",
+      "Intricate sculptures",
+      "Archaeological significance",
+      "Buddhist heritage site",
+      "Historical importance",
+      "Cultural monument"
+    ]
+  }
+]

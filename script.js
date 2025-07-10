@@ -438,6 +438,13 @@ function setupEventListeners() {
     if (searchTerm === '') {
       if (appState.currentState) {
         renderMonuments();
+      } else {
+        // Return to home view when search is cleared
+        document.getElementById('heroSection').classList.remove('hidden');
+        document.getElementById('statesSection').classList.remove('hidden');
+        document.getElementById('stateDetailSection').classList.add('hidden');
+        document.getElementById('monumentDetailSection').classList.add('hidden');
+        document.getElementById('aboutSection').classList.add('hidden');
       }
       return;
     }
@@ -446,7 +453,14 @@ function setupEventListeners() {
       monument.name.toLowerCase().includes(searchTerm) ||
       monument.description.toLowerCase().includes(searchTerm) ||
       monument.location.toLowerCase().includes(searchTerm) ||
-      monument.type.toLowerCase().includes(searchTerm)
+      monument.type.toLowerCase().includes(searchTerm) ||
+      (monument.state && monument.state.toLowerCase().includes(searchTerm)) ||
+      (monument.festivals && monument.festivals.some(festival => 
+        festival.toLowerCase().includes(searchTerm)
+      )) ||
+      (monument.specialFeatures && monument.specialFeatures.some(feature => 
+        feature.toLowerCase().includes(searchTerm)
+      ))
     );
     
     if (appState.currentState) {
@@ -458,6 +472,40 @@ function setupEventListeners() {
       showGlobalSearchResults(filteredMonuments);
     }
   });
+
+  // About Us link
+  document.getElementById('aboutLink').addEventListener('click', (e) => {
+    e.preventDefault();
+    showAboutSection();
+  });
+
+  // Back to home from about
+  document.getElementById('backToHome').addEventListener('click', () => {
+    document.getElementById('heroSection').classList.remove('hidden');
+    document.getElementById('statesSection').classList.remove('hidden');
+    document.getElementById('stateDetailSection').classList.add('hidden');
+    document.getElementById('monumentDetailSection').classList.add('hidden');
+    document.getElementById('aboutSection').classList.add('hidden');
+    appState.currentState = null;
+    appState.currentFilter = 'all';
+    
+    // Reset all filters
+    document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelector('.nav-btn[data-category="all"]').classList.add('active');
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
+    
+    // Clear search
+    document.getElementById('searchInput').value = '';
+  });
+}
+
+function showAboutSection() {
+  document.getElementById('heroSection').classList.add('hidden');
+  document.getElementById('statesSection').classList.add('hidden');
+  document.getElementById('stateDetailSection').classList.add('hidden');
+  document.getElementById('monumentDetailSection').classList.add('hidden');
+  document.getElementById('aboutSection').classList.remove('hidden');
 }
 
 function showGlobalFilteredMonuments() {

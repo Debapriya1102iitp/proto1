@@ -435,6 +435,130 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* About Section */
+.about-section {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #f5f1eb 0%, #e8dcc6 100%);
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-icon {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 16px;
+    padding: 4px;
+}
+
+.about-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #7c2d12;
+    margin: 0;
+}
+
+.about-text {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+.about-text strong {
+    color: #7c2d12;
+    font-weight: 600;
+}
+
+.closing-message {
+    font-style: italic;
+    color: #ea580c !important;
+    font-weight: 500;
+    text-align: center !important;
+    padding: 1rem;
+    background: #fff3e0;
+    border-radius: 12px;
+    border-left: 4px solid #ea580c;
+}
+
+.about-features {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #f5f1eb;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-item h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #7c2d12;
+    margin-bottom: 0.75rem;
+}
+
+.feature-item p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 /* Monument Detail Section */
 .monument-detail {
     padding: 120px 0 80px;
@@ -665,6 +789,23 @@ body {
         grid-template-columns: 1fr;
         text-align: center;
     }
+    
+    .about-header h2 {
+        font-size: 2rem;
+    }
+    
+    .about-text {
+        padding: 2rem;
+    }
+    
+    .about-features {
+        padding: 2rem;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -682,12 +823,22 @@ body {
     
     .states-section,
     .state-detail,
-    .monument-detail {
+    .monument-detail,
+    .about-section {
         padding: 60px 0;
     }
     
     .monument-info,
     .monument-location {
         padding: 1.5rem;
+    }
+    
+    .about-text,
+    .about-features {
+        padding: 1.5rem;
+    }
+    
+    .about-text p {
+        font-size: 1rem;
     }
 }
